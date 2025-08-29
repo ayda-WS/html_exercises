@@ -1,2 +1,123 @@
-# html_exercises
-HTML Exercises for Web Systems (Items 1-40)
+
+<!--
+
+Alvienne Ysabelle D. Abundo    BSIT-Animation 3A 
+ HTML Exercises
+
+-->
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            My Personal Webpage
+        </title>
+
+        <link rel="icon" type="image/png" href="favicon.png"> 
+
+        <h1>
+            Alvienne Ysabelle D. Abundo
+        </h1>
+        <h2>
+            About Me
+        </h2>
+    </head>
+    <body>
+        <p> Hello! My name is Ysabelle and I love web development.</p>
+        <p> I love coding. <br> I also enjoy reading. </p>
+            <hr>
+        <p> My name is <b> Alvienne Ysabelle D. Abundo.</b> </p>
+        <p> I enjoy <i> eating </i> in my free time </p>
+        <p> I am a <u>web developer </u>. </p> 
+        <ol> 
+            <li>Spinach Pizza</li> 
+            <li>Takoyaki</li> 
+            <li>Tonkatsu</li> 
+        </ol> 
+        <ul> 
+            <li>Reading</li> 
+            <li>Drawing</li> 
+            <li>Gaming</li> 
+        </ul> 
+        <img src="anon.jpg" alt="My Photo" width="200">
+            <br>
+        <a href="https://www.google.com"> Visit Google </a>
+            <br>
+        <a href="mailto:example.gmail.com">Send me an Email</a>
+        <table border ="1"> 
+            <tr> 
+                <td>Name</td> 
+                <td>Age</td> 
+            </tr> 
+            <tr> 
+                <td>Ysabelle</td> 
+                <td>21</td> 
+            </tr> 
+        </table> 
+
+        <form> Name: <input type="text" name="fullname"> </form> 
+        <form> Password: <input type="password" name="pwd"> </form> 
+        <form> <button type="submit">Submit</button> </form> 
+
+        <!--This is a comment. Hello!-->
+
+        <form> 
+            <p>Gender:</p> 
+            <input type="radio" name="gender" value="male"> Male<br> 
+            <input type="radio" name="gender" value="female"> Female 
+        </form>
+
+        <form> 
+            <p>Hobbies:</p> 
+            <input type="checkbox" name="hobby" value="reading"> Reading<br> 
+            <input type="checkbox" name="hobby" value="sports"> Sports<br> 
+            <input type="checkbox" name="hobby" value="travel"> Travel 
+        </form> 
+            <br>
+        <form> 
+            <label for="country">Select Country:</label> 
+            <select id="country"> 
+                <option>Philippines</option> 
+                <option>Japan</option> 
+                <option>USA</option> 
+            </select> 
+        </form> 
+            <br>
+        <form> 
+            <label for="message">Message:</label><br> 
+            <textarea id="message" rows="4" cols="30"></textarea> 
+        </form> 
+
+        <audio controls> 
+            <source src="magicalconnection.mp3" type="audio/mpeg"> 
+        </audio> 
+
+        <video width="320" height="240" controls> 
+            <source src="familiar.mp4" type="video/mp4"> 
+        </video> 
+
+        <iframe src="https://www.google.com" width="600" height="400"></iframe>
+
+        <iframe width="560" height="315"  src="https://youtu.be/BwrM_E-7y5g?si=RDTg1YLiDzw6NXy_"  frameborder="0" allowfullscreen> </iframe> 
+
+        <p>Water formula: H<sub>2</sub>O</p> 
+        <p>x<sup>2</sup></p> 
+        <p>This is <strong>very important</strong>!</p> 
+        <p>Please <em>read carefully</em>.</p> 
+        <p><small>© 2025 My Website</small></p>
+        <blockquote> "The journey of a thousand miles begins with one step." </blockquote> 
+        <p>He said, <q>Hello, world!</q></p> 
+        <p><abbr title="HyperText Markup Language">HTML</abbr> is the language of the web.</p> 
+        <address> 
+            Written by Juan Dela Cruz<br> 
+            Visit us at www.mywebsite.com<br> 
+            Manila, Philippines 
+        </address> 
+
+        <p>This is a <mark>highlighted</mark> word.</p> 
+        <p>Task Progress:</p> <progress value="70" max="100"></progress> 
+
+    </body>
+</html>
