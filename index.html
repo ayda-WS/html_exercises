@@ -2,7 +2,7 @@
 
 <!-- 
 TO BE EDITED (WHOLE CODE) 
-ID-Seelectors 26 - 28
+ID-Seelectors 29 - 30
 -->
 
 <html>
@@ -22,6 +22,8 @@ ID-Seelectors 26 - 28
       #email-field {border: 1px solid red;} 
 
       #home-link {color: purple;}
+      #login-form {background: #f9f9f9; padding: 15px;} 
+      #footer-text {text-align: right;} 
       
       <!-- h1 {color: blue;} -->
       h2 {text-align: center;}
@@ -48,7 +50,7 @@ ID-Seelectors 26 - 28
     
     <title> My Personal Webpage </title>
     <h1 = "main-title"> Alvienne Ysabelle D. Abundo </h1>
-    <h2> About Me </h2>
+    <h2 id="footer-text"> About Me </h2>
   </head>
   
   <body>
@@ -89,7 +91,7 @@ ID-Seelectors 26 - 28
       </tr> 
     </table>  
 
-    <form> Name: <input type = "text" name = "fullname"> </form>
+    <form id="login-form"> Name: <input type = "text" name = "fullname"> </form>
     <form> Password: <input type="password" name="pwd"> </form>
     <form> <button id="submit-btn", type="submit">Submit</button> </form>
     <form> <p>Gender:</p> 
