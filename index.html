@@ -13,7 +13,6 @@ Class Selectors
       #intro-text {font-style: italic;}
       #student-table {border-collapse: collapse;}
       #profile-pic {border-radius: 50%;}
-      #submit-btn {background-color: orange; padding: 10px;}
 
       <!-- for a div container -->
       #container {margin: 20px; padding: 20px; background-color: #eee; }
@@ -38,15 +37,21 @@ Class Selectors
       th {background-color: lightblue;}
       td {padding: 10px;}
       img {width: 200px; border-radius:10 px;}
+      
+      <!-- Submit Button Css Style -->
+      #submit-btn {background-color: orange; padding: 10px;}
       button {background-color:green;color:white;padding:8 px;}
+      .btn {background-color: teal; color: white; padding: 10px 15px;} 
+      
       form{border:1px solidgray;padding:15 px;}
       input{border:2px solidblue;}
       textarea{width:300px; height:100px;}
-      audio { width: 250px; }
-      video { border: 5px solid black; }
+      audio {width: 250px; }
+      video {border: 5px solid black; }
 
       .paragraph {font-family: Arial, sans-serif;}
       .title {color: navy;} 
+
 
 
     </style>
@@ -99,7 +104,9 @@ Class Selectors
 
     <form id="login-form"> Name: <input type = "text" name = "fullname"> </form>
     <form> Password: <input type="password" name="pwd"> </form>
-    <form> <button id="submit-btn", type="submit">Submit</button> </form>
+      <div class = "btn">
+        <form> <button id="submit-btn", type="submit">Submit</button> </form>
+      </div>
     <form> <p>Gender:</p> 
                 <input type="radio" name="gender" value="male"> Male<br> 
                 <input type="radio" name="gender" value="female"> Female 
