@@ -2,17 +2,17 @@
 
 <!-- 
 TO BE EDITED (WHOLE CODE) 
-Class Selectors
+Class Selectors 34
 -->
 
 <html>
   <head>
     
     <style> <!-- TO BE EDITED (<style> code) -->
+      
       #main-title {color: darkred; font-size: 30px;}
       #intro-text {font-style: italic;}
       #student-table {border-collapse: collapse;}
-      #profile-pic {border-radius: 50%;}
 
       <!-- for a div container -->
       #container {margin: 20px; padding: 20px; background-color: #eee; }
@@ -31,17 +31,24 @@ Class Selectors
       body {background-color: lightgray;}
       a {color: red; text-decoration: none;}
       ul {list-style-type: square;}
-      ol {list-style-type: upper-roman;}
       li {margin: 5px;}
       table {border: 1px solid black;}
       th {background-color: lightblue;}
       td {padding: 10px;}
-      img {width: 200px; border-radius:10 px;}
+
+      <!-- Ordered List CSS style -->
+      .list-item {font-weight: bold;}
+      ol {list-style-type: upper-roman;}
       
-      <!-- Submit Button Css Style -->
+      <!-- Submit Button Css Style: CONFLICT > background-color, color, padding -->
       #submit-btn {background-color: orange; padding: 10px;}
       button {background-color:green;color:white;padding:8 px;}
       .btn {background-color: teal; color: white; padding: 10px 15px;} 
+
+      <!-- img CSS Style: CONFLICT > border-radius -->
+      img {width: 200px; border-radius:10 px;}
+      #profile-pic {border-radius: 50%;}
+      .rounded-img {border-radius: 15px;}
       
       form{border:1px solidgray;padding:15 px;}
       input{border:2px solidblue;}
@@ -51,6 +58,11 @@ Class Selectors
 
       .paragraph {font-family: Arial, sans-serif;}
       .title {color: navy;} 
+      .card {border: 1px solid #ccc; padding: 20px; margin: 10px;} 
+      .highlight {background-color: yellow;}
+      .nav-link {color: darkgreen; margin-right: 15px;}
+      .input-field {border: 2px solid gray; padding: 5px; }
+      .footer-note {font-size: 12px; color: gray;} 
 
 
 
@@ -59,7 +71,7 @@ Class Selectors
     <title> My Personal Webpage </title>
     <h1 id = "main-title"> Alvienne Ysabelle D. Abundo </h1>
     <h2 class = "title"> About Me </h2>
-    <h3 id="footer-text"> Hello </h3>
+    <h3 id="footer-text", class = "footer-note"> Hello </h3>
   </head>
   
   <body>
@@ -74,7 +86,7 @@ Class Selectors
     </p>
     </div>
     
-    <ol> 
+    <ol class = "list-item"> 
       <li>Pizza</li> 
       <li>Potato</li> 
       <li>Basta luto ni lola</li> 
@@ -86,8 +98,8 @@ Class Selectors
       <li>Gaming</li> 
   </ul> 
 
-    <img id="profile-pic", src="EXERCISES_HTML/anon.jpg" alt="My Photo" width="200"> <br>
-    <a id="home-link", href="https://www.google.com"> Visit Google </a> <br>
+    <img id = "profile-pic", class = "rounde-img", src = "EXERCISES_HTML/anon.jpg" alt="My Photo" width="200"> <br>
+    <a id="home-link", class = "nav-link", href="https://www.google.com"> Visit Google </a> <br>
 
     <a href="mailto:example@gmail.com"> Send me an Email </a> 
     
@@ -111,6 +123,7 @@ Class Selectors
                 <input type="radio" name="gender" value="male"> Male<br> 
                 <input type="radio" name="gender" value="female"> Female 
     </form>
+    
     <form> 
         <p>Hobbies:</p> 
             <input type="checkbox" name="hobby" value="reading"> Reading<br> 
@@ -125,7 +138,8 @@ Class Selectors
       <option>USA</option> 
       </select> 
     </form>
-    <form> 
+    
+    <form class = "input-field"> 
       <label for="message">Message:</label><br> 
       <textarea id="message" rows="4" cols="30"></textarea> 
     </form>
@@ -141,7 +155,7 @@ Class Selectors
     <iframe src="https://www.google.com" width="600" height="400"></iframe> 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/BwrM_E-7y5g?si=lRGa5dnjZipjdmzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
 
-    <p>
+    <p class = "highlight">
       Water formula: H<sub>2</sub>O <br>
       x<sup>2</sup> <br>
       This is <strong>very important</strong>! <br>
@@ -150,12 +164,13 @@ Class Selectors
     </p>
 
     <blockquote> "The journey of a thousand miles begins with one step." </blockquote> 
-    
-    <p> 
+
+    <div class = "card">
+      <p> 
       He said, <q>Hello, world!</q> <br>
-      <abbr title="HyperText Markup Language">HTML</abbr> is the language 
-of the web. <br>
-    </p> 
+      <abbr title="HyperText Markup Language">HTML</abbr> is the language of the web. <br>
+      </p> 
+    </div>
 
     <address> 
       Written by Juan Dela Cruz<br> 
